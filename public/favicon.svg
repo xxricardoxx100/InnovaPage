@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#0A0A0A" rx="12"/>
+  <polygon points="50,15 65,45 90,45 68,62 76,90 50,72 24,90 32,62 10,45 35,45" fill="#DC2626"/>
+  <text x="50" y="58" text-anchor="middle" font-size="22" font-weight="bold" font-family="Arial" fill="white">IAG</text>
+</svg>
