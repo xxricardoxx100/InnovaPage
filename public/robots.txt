@@ -1,0 +1,8 @@
+# robots.txt — Innova Acabados Global
+# Le dice a Google y otros buscadores cómo indexar el sitio
+
+User-agent: *
+Allow: /
+
+# Sitemap — Le dice a Google exactamente dónde está el mapa del sitio
+Sitemap: https://innovaacabadosglobal.vercel.app/sitemap.xml

@@ -7,49 +7,55 @@ const services = [
     icon: Car,
     title: 'Planchado Automotriz',
     description:
-      'Reparación de abolladuras, golpes y daños estructurales de carrocería con técnicas de última generación. Resultados perfectos garantizados.',
+      'Reparación profesional de abolladuras, golpes y daños de carrocería. Recuperamos la forma original de tu vehículo usando técnicas PDR y equipos de enderezado de última generación. Resultados perfectos, garantizados.',
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75',
     tag: 'Carrocería',
+    keywords: 'planchado automotriz · reparación carrocería · abolladuras',
   },
   {
     icon: Paintbrush2,
-    title: 'Pintura de Alta Gama',
+    title: 'Pintura Automotriz de Alta Gama',
     description:
-      'Aplicación de pintura profesional con cabina de pintado climatizada. Colores sólidos, metálicos, perlados y personalizados al detalle.',
+      'Aplicación de pintura automotriz profesional en cabina climatizada. Igualamos colores con precisión digital. Pintura sólida, metálica, perlada y bicapa. Acabado de concesionario garantizado.',
     image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&q=75',
     tag: 'Pintura',
+    keywords: 'pintura automotriz · pintura de carrocería · pintura metalizada',
   },
   {
     icon: Cpu,
-    title: 'Diagnóstico Electrónico',
+    title: 'Diagnóstico Electrónico Automotriz',
     description:
-      'Escaneo completo de todos los sistemas electrónicos del vehículo con equipos de alta tecnología. Identificamos fallas con precisión.',
+      'Escaneo completo de todos los módulos electrónicos: motor, transmisión, ABS, airbag, climatización y más. Usamos escáneres de última generación compatibles con todas las marcas. Resultados el mismo día.',
     image: 'https://images.unsplash.com/photo-1617654112368-307921291f42?w=600&q=75',
     tag: 'Electrónica',
+    keywords: 'diagnóstico electrónico automotriz · scanner automotriz · fallas electrónicas',
   },
   {
     icon: Shield,
-    title: 'Reset Sistema Airbag',
+    title: 'Reseteo y Reparación de Airbag',
     description:
-      'Reseteo profesional del módulo de airbag y simulaciones de impacto. Restauramos el sistema completo de seguridad de tu vehículo.',
+      'Reseteo profesional del módulo SRS airbag después de accidentes. Reparación y limpieza del módulo de control. Simulaciones de airbag. Eliminamos los códigos de falla y restauramos el 100% del sistema de seguridad.',
     image: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=75',
     tag: 'Seguridad',
+    keywords: 'reset airbag · reseteo airbag · reparación airbag · simulación airbag',
   },
   {
     icon: Wrench,
     title: 'Simulaciones Electrónicas',
     description:
-      'Simulaciones y emulaciones de sensores y módulos electrónicos. Soluciones definitivas para problemas de difícil diagnóstico convencional.',
+      'Simulaciones y emulaciones de sensores, módulos y actuadores electrónicos. Solucionamos interferencias y fallas persistentes de forma definitiva sin necesidad de reemplazar piezas costosas.',
     image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=600&q=75',
     tag: 'Electrónica',
+    keywords: 'simulaciones electrónicas · emulación sensores · módulos electrónicos',
   },
   {
     icon: Gauge,
     title: 'Calibración de Odómetros',
     description:
-      'Programación y calibración de odómetros nuevos tras cambio de cuadro. Proceso legal y certificado con garantía de precisión total.',
+      'Programación y calibración de odómetros nuevos tras cambio de cuadro de instrumentos. Ajuste preciso del kilometraje real del vehículo. Proceso certificado, documentado y con garantía de exactitud total.',
     image: 'https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=600&q=75',
     tag: 'Instrumentos',
+    keywords: 'calibración de odómetro · calibración odómetro nuevo · programación odómetro',
   },
 ]
 
@@ -98,20 +104,22 @@ export default function Services() {
         {/* Cards grid */}
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => (
-            <motion.div
+            <motion.article
               key={i}
               custom={i}
               variants={cardVariants}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
               className="group relative overflow-hidden rounded-lg border border-white/5 hover:border-primary/40 transition-all duration-500 bg-dark-200"
+              aria-label={service.title}
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={service.image}
-                  alt={service.title}
+                  alt={`Servicio de ${service.title} — Innova Acabados Global`}
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-200 via-dark-200/50 to-transparent" />
 
@@ -137,8 +145,13 @@ export default function Services() {
                   {service.description}
                 </p>
 
+                {/* Keywords badge — ayuda SEO y orienta al usuario */}
+                <p className="mt-4 text-gray-600 text-[10px] leading-relaxed italic">
+                  {service.keywords}
+                </p>
+
                 {/* Bottom line */}
-                <div className="mt-5 pt-4 border-t border-white/5">
+                <div className="mt-4 pt-4 border-t border-white/5">
                   <span className="text-primary text-xs font-semibold uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all duration-300 cursor-pointer">
                     Más información
                     <span className="text-lg leading-none">→</span>
@@ -150,7 +163,7 @@ export default function Services() {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>
