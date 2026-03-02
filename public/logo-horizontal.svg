@@ -1,35 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" width="520" height="100">
-  <!-- Shield emblem -->
-  <path d="M50 8 L90 22 L90 62 Q90 82 50 92 Q10 82 10 62 L10 22 Z"
-    fill="#111111" stroke="#DC2626" stroke-width="2"/>
-  <path d="M50 18 L82 30 L82 62 Q82 76 50 84 Q18 76 18 62 L18 30 Z"
-    fill="none" stroke="#DC2626" stroke-width="1" opacity="0.4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 110" width="560" height="110">
+  <defs>
+    <linearGradient id="redH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#B91C1C"/>
+    </linearGradient>
+  </defs>
 
-  <!-- I -->
-  <rect x="28" y="34" width="8" height="34" rx="2" fill="white"/>
-  <rect x="25" y="34" width="14" height="6" rx="1.5" fill="#DC2626"/>
-  <rect x="25" y="62" width="14" height="6" rx="1.5" fill="#DC2626"/>
+  <!-- Shield icon -->
+  <path d="M55 8 L98 24 L98 65 Q98 90 55 103 Q12 90 12 65 L12 24 Z"
+    fill="#111111" stroke="#DC2626" stroke-width="2.2"/>
+  <path d="M55 18 L89 32 L89 65 Q89 82 55 94 Q21 82 21 65 L21 32 Z"
+    fill="none" stroke="#DC2626" stroke-width="1" opacity="0.35"/>
 
-  <!-- A -->
-  <path d="M47 68 L55.5 34 L64 68" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="50" y1="57" x2="61" y2="57" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <!-- Lightning bolt inside shield -->
+  <polygon points="61,28 44,58 56,58 49,84 72,50 59,50" fill="url(#redH)"/>
 
-  <!-- G -->
-  <path d="M79 44 Q70 34 62 44 Q56 53 59 63 Q63 73 72 72 L79 72 L79 60 L72 60"
-    fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Vertical divider -->
+  <rect x="118" y="14" width="2" height="82" rx="1" fill="#DC2626" opacity="0.4"/>
 
-  <!-- Divider line -->
-  <line x1="108" y1="15" x2="108" y2="85" stroke="#DC2626" stroke-width="1.5" opacity="0.5"/>
+  <!-- INNOVA -->
+  <text x="136" y="66"
+    font-family="Arial Black, Arial, sans-serif"
+    font-weight="900"
+    font-size="42"
+    fill="white"
+    letter-spacing="4">INNOVA</text>
 
-  <!-- INNOVA text -->
-  <text x="125" y="52" font-family="Arial, sans-serif" font-weight="900"
-    font-size="36" fill="white" letter-spacing="5">INNOVA</text>
-
-  <!-- Acabados Global text -->
-  <text x="126" y="72" font-family="Arial, sans-serif" font-weight="400"
-    font-size="12" fill="#DC2626" letter-spacing="5">ACABADOS GLOBAL</text>
+  <!-- ACABADOS GLOBAL -->
+  <text x="138" y="88"
+    font-family="Arial, sans-serif"
+    font-weight="400"
+    font-size="13"
+    fill="#DC2626"
+    letter-spacing="6">ACABADOS GLOBAL</text>
 
   <!-- Tagline -->
-  <text x="126" y="87" font-family="Arial, sans-serif" font-weight="300"
-    font-size="9" fill="#555555" letter-spacing="2">CARROCERÍA · ELECTRÓNICA AUTOMOTRIZ</text>
+  <text x="138" y="104"
+    font-family="Arial, sans-serif"
+    font-weight="300"
+    font-size="9.5"
+    fill="#444444"
+    letter-spacing="2">CARROCERÍA · ELECTRÓNICA AUTOMOTRIZ</text>
 </svg>
