@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#0A0A0A" rx="24"/>
+
+  <!-- Outer hexagon ring -->
+  <polygon points="200,30 350,110 350,290 200,370 50,290 50,110"
+    fill="none" stroke="#DC2626" stroke-width="3" opacity="0.4"/>
+
+  <!-- Inner hexagon -->
+  <polygon points="200,55 325,122 325,278 200,345 75,278 75,122"
+    fill="none" stroke="#DC2626" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Center shield/emblem -->
+  <path d="M200 80 L280 115 L280 210 Q280 265 200 300 Q120 265 120 210 L120 115 Z"
+    fill="#111111" stroke="#DC2626" stroke-width="2.5"/>
+
+  <!-- Shield inner accent -->
+  <path d="M200 100 L265 130 L265 208 Q265 252 200 282 Q135 252 135 208 L135 130 Z"
+    fill="none" stroke="#DC2626" stroke-width="1" opacity="0.5"/>
+
+  <!-- Red diagonal accent bars inside shield -->
+  <rect x="170" y="155" width="60" height="5" rx="2" fill="#DC2626" opacity="0.6"
+    transform="rotate(-15 200 157)"/>
+  <rect x="170" y="167" width="60" height="5" rx="2" fill="#DC2626" opacity="0.4"
+    transform="rotate(-15 200 169)"/>
+
+  <!-- IAG Letters -->
+  <!-- I -->
+  <rect x="153" y="148" width="12" height="52" rx="3" fill="white"/>
+  <rect x="148" y="148" width="22" height="8" rx="2" fill="#DC2626"/>
+  <rect x="148" y="192" width="22" height="8" rx="2" fill="#DC2626"/>
+
+  <!-- A -->
+  <path d="M189 200 L204 148 L219 200" fill="none" stroke="white" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="193" y1="182" x2="215" y2="182" stroke="white" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- G -->
+  <path d="M247 163 Q233 148 222 165 Q212 178 215 192 Q219 208 233 207 Q244 207 248 200 L248 190 L237 190"
+    fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Bottom text: INNOVA -->
+  <text x="200" y="330" text-anchor="middle"
+    font-family="Arial, sans-serif" font-weight="900"
+    font-size="26" fill="white" letter-spacing="12">
+    INNOVA
+  </text>
+
+  <!-- Bottom text: ACABADOS GLOBAL -->
+  <text x="200" y="354" text-anchor="middle"
+    font-family="Arial, sans-serif" font-weight="400"
+    font-size="11" fill="#DC2626" letter-spacing="6">
+    ACABADOS GLOBAL
+  </text>
+
+  <!-- Top arc label -->
+  <path id="top-arc" d="M 95,200 A 105,105 0 0,1 305,200" fill="none"/>
+  <text font-family="Arial, sans-serif" font-size="10" fill="#DC2626" letter-spacing="4" opacity="0.7">
+    <textPath href="#top-arc" startOffset="15%">CARROCERÍA · ELECTRÓNICA</textPath>
+  </text>
+
+  <!-- Corner dots decoration -->
+  <circle cx="200" cy="22" r="4" fill="#DC2626"/>
+  <circle cx="200" cy="378" r="4" fill="#DC2626"/>
+  <circle cx="44" cy="107" r="3" fill="#DC2626" opacity="0.6"/>
+  <circle cx="356" cy="107" r="3" fill="#DC2626" opacity="0.6"/>
+  <circle cx="44" cy="293" r="3" fill="#DC2626" opacity="0.6"/>
+  <circle cx="356" cy="293" r="3" fill="#DC2626" opacity="0.6"/>
+</svg>

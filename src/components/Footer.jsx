@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll'
-import { Zap, Heart } from 'lucide-react'
+import { Heart } from 'lucide-react'
 import { FaWhatsapp, FaInstagram, FaFacebook, FaTiktok } from 'react-icons/fa'
 
 const footerLinks = [
@@ -37,19 +37,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="hero" smooth duration={800} className="cursor-pointer inline-block mb-6">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-primary rounded-sm flex items-center justify-center">
-                  <Zap className="w-7 h-7 text-white" fill="white" />
-                </div>
-                <div>
-                  <p className="font-heading font-bold text-xl uppercase tracking-wider leading-none text-white">
-                    Innova
-                  </p>
-                  <p className="text-primary text-[11px] uppercase tracking-[0.3em] leading-none mt-1">
-                    Acabados Global
-                  </p>
-                </div>
-              </div>
+              <img
+                src="/logo-horizontal.svg"
+                alt="Innova Acabados Global"
+                className="h-14 w-auto hover:opacity-90 transition-opacity duration-300"
+              />
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
               Especialistas en carrocería y electrónica automotriz. Devolvemos la perfección a tu vehículo.

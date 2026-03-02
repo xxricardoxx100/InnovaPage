@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" width="520" height="100">
+  <!-- Shield emblem -->
+  <path d="M50 8 L90 22 L90 62 Q90 82 50 92 Q10 82 10 62 L10 22 Z"
+    fill="#111111" stroke="#DC2626" stroke-width="2"/>
+  <path d="M50 18 L82 30 L82 62 Q82 76 50 84 Q18 76 18 62 L18 30 Z"
+    fill="none" stroke="#DC2626" stroke-width="1" opacity="0.4"/>
+
+  <!-- I -->
+  <rect x="28" y="34" width="8" height="34" rx="2" fill="white"/>
+  <rect x="25" y="34" width="14" height="6" rx="1.5" fill="#DC2626"/>
+  <rect x="25" y="62" width="14" height="6" rx="1.5" fill="#DC2626"/>
+
+  <!-- A -->
+  <path d="M47 68 L55.5 34 L64 68" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="50" y1="57" x2="61" y2="57" stroke="white" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- G -->
+  <path d="M79 44 Q70 34 62 44 Q56 53 59 63 Q63 73 72 72 L79 72 L79 60 L72 60"
+    fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Divider line -->
+  <line x1="108" y1="15" x2="108" y2="85" stroke="#DC2626" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- INNOVA text -->
+  <text x="125" y="52" font-family="Arial, sans-serif" font-weight="900"
+    font-size="36" fill="white" letter-spacing="5">INNOVA</text>
+
+  <!-- Acabados Global text -->
+  <text x="126" y="72" font-family="Arial, sans-serif" font-weight="400"
+    font-size="12" fill="#DC2626" letter-spacing="5">ACABADOS GLOBAL</text>
+
+  <!-- Tagline -->
+  <text x="126" y="87" font-family="Arial, sans-serif" font-weight="300"
+    font-size="9" fill="#555555" letter-spacing="2">CARROCERÍA · ELECTRÓNICA AUTOMOTRIZ</text>
+</svg>

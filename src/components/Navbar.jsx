@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-scroll'
-import { Menu, X, Zap } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const navLinks = [
   { label: 'Inicio', to: 'hero' },
@@ -36,19 +36,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="hero" smooth duration={800} className="cursor-pointer">
-            <div className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center group-hover:bg-primary-dark transition-colors duration-300">
-                <Zap className="w-6 h-6 text-white" fill="white" />
-              </div>
-              <div>
-                <p className="font-heading font-bold text-lg uppercase tracking-wider leading-none text-white">
-                  Innova
-                </p>
-                <p className="text-primary text-[10px] uppercase tracking-[0.3em] leading-none">
-                  Acabados Global
-                </p>
-              </div>
-            </div>
+            <img
+              src="/logo-horizontal.svg"
+              alt="Innova Acabados Global"
+              className="h-12 w-auto hover:opacity-90 transition-opacity duration-300"
+            />
           </Link>
 
           {/* Desktop Nav */}
