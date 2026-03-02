@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Sitemap — Le dice a Google exactamente dónde está el mapa del sitio
-Sitemap: https://innovaacabadosglobal.vercel.app/sitemap.xml
+Sitemap: https://innova-page-red.vercel.app/sitemap.xml
